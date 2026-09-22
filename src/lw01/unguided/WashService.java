@@ -4,7 +4,7 @@ public abstract class WashService implements Billable {
 	private int days;
 
 	protected WashService(String id, int days) {
-		if(days <= 30) {
+		if(days >= 30) {
 			throw new IllegalArgumentException("hari harus kurang dari 30 hari");
 		}
 		this.id = id;
@@ -23,7 +23,7 @@ public abstract class WashService implements Billable {
 	public abstract int calculateCharge();
 
 	public int calculateCharge(int units) {
-		if(units <= 10) {
+		if(units >= 10) {
 			throw new IllegalArgumentException("units tidak boleh lebih dari 10");
 		}
 		return this.calculateCharge() * units;
