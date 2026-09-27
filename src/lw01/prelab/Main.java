@@ -8,7 +8,7 @@ public class Main {
 
         List<PrintJob> jobs = new ArrayList<>();
 
-        Scanner scanner = new Scanner(Main.class.getResourceAsStream("lw01/prelab/jobs.txt"));
+        Scanner scanner = new Scanner(Main.class.getResourceAsStream("jobs.txt"));
 
         while (scanner.hasNext()) {
             String type = scanner.next();

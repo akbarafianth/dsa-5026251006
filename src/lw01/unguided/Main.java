@@ -8,7 +8,7 @@ public class Main {
 
         List<WashService> washs = new ArrayList<>();
 
-        Scanner scanner = new Scanner(Main.class.getResourceAsStream("lw01/unguided/washes.txt"));
+        Scanner scanner = new Scanner(Main.class.getResourceAsStream("washes.txt"));
 
        int n = scanner.nextInt();
             WashService[] wash = new WashService[n];
