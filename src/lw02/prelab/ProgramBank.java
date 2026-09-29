@@ -14,7 +14,7 @@ public class ProgramBank{
         Scanner buktiTransaksi = new Scanner(ProgramBank.class.getResourceAsStream("Transaction.txt"));
 
         while(buktiTransaksi.hasNextLine()){
-            String baris = buktiTransaksi.nextLine();
+            String baris = buktiTransaksi.nextLine();   
             String[] data = baris.split(" ");
             transaksi.add(data);
         }
